@@ -1,0 +1,12 @@
+cancer:
+  type: pandas.CSVDataset
+  filepath: data/01_raw/Breast_cancer_data.csv
+
+model_input_table:
+  type: pandas.ParquetDataset
+  filepath: data/05_model_input/model_input_table.parquet
+
+classifier:
+  type: pickle.PickleDataset
+  filepath: data/06_models/classifier.pickle
+  versioned: true
